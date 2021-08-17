@@ -7,6 +7,8 @@ extern "C" {
 	uint32_t f1(uint32_t p);
 	uint32_t f2(uint32_t p);
 
+	void error(uint32_t nr);
+
 #ifdef __cplusplus
 }
 #endif
