@@ -39,7 +39,12 @@ extern "C" void set_value(uint32_t p)
 	LOG_PARAM_U32(p);
 }
 
-extern "C" void error(uint32_t nr)
+void error_cpp(uint32_t nr)
 {
 	throw nr + 100;
+}
+
+extern "C" void error(uint32_t nr)
+{
+	error_cpp(nr);
 }
